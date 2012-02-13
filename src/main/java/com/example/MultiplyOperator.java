@@ -1,6 +1,6 @@
 package com.example;
 
-final class MultiplyOperator extends SingleValueOperator {
+final class MultiplyOperator extends UnaryOperator {
 	public MultiplyOperator() {
 		super("MULTIPLY BY (.*)");
 	}

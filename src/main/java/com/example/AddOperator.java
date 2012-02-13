@@ -1,6 +1,6 @@
 package com.example;
 
-final class AddOperator extends SingleValueOperator {
+final class AddOperator extends UnaryOperator {
 	public AddOperator() {
 		super("ADD (.*)");
 	}

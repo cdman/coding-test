@@ -3,11 +3,11 @@ package com.example;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-abstract class SingleValueOperator extends AbstractOperator {
+abstract class UnaryOperator extends AbstractOperator {
 	private final Pattern capturingRegex;
 	private Double lastMatch;
 
-	SingleValueOperator(String capturingRegex) {
+	UnaryOperator(String capturingRegex) {
 		this.capturingRegex = Pattern.compile(capturingRegex);
 	}
 

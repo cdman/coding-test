@@ -4,7 +4,7 @@ import java.util.*;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public final class MultiplyOperatorTest  extends AbstractOperatorTest {
+public final class MultiplyOperatorTest extends AbstractOperatorTest {
 	public MultiplyOperatorTest() {
 		super(Arrays.asList("MULTIPLY BY 123", "MULTIPLY BY +42", "MULTIPLY BY -1", "MULTIPLY BY 3.1415", "MULTIPLY BY -1E-5"),
 			Arrays.asList("MULTIPLY BY ", " MULTIPLY BY 123", "MULTIPLY BY -1.1.1"));
