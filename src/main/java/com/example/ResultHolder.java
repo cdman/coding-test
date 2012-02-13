@@ -4,17 +4,17 @@ package com.example;
  * Encapsulates the result of the calculation and offers getters/setters for it 
  */
 final class ResultHolder {
-	private int result;
+	private double result;
 	
-	public ResultHolder(int initialValue) {
+	public ResultHolder(double initialValue) {
 		result = initialValue;
 	}
 	
-	int getResult() {
+	double getResult() {
 		return result;
 	}
 
-	void setResult(int value) {
+	void setResult(double value) {
 		result = value;
 	}
 }
