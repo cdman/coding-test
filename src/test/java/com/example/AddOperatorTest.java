@@ -20,7 +20,7 @@ public final class AddOperatorTest extends AbstractOperatorTest {
 		op.matchesLine("ADD 1");
 		op.performOp(result);
 		
-		assertEquals(2, result.getResult(), 1E-10);
+		assertEquals(2.0d, result.getResult(), 1E-10);
 	}
 
 	@Override
