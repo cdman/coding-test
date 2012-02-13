@@ -9,7 +9,7 @@ final class AddOperator extends AbstractOperator {
 	private Double lastMatch;
 	
 	@Override
-	public boolean matchesLine(String line) {
+	boolean doMatchesLine(String line) {
 		Matcher m = ADD_PATTERN.matcher(line);
 		if (!m.matches()) { return false; }
 		lastMatch = getFloatingPointNumber(m.group(1));
@@ -17,11 +17,7 @@ final class AddOperator extends AbstractOperator {
 	}
 
 	@Override
-	public void performOp(ResultHolder currentResult) {
-		if (lastMatch == null) { 
-			throw new NullPointerException("Last match not found! "
-				+ "Perhaps matchesLine wasn't called or performOp called repeteadly?"); 
-		}		
+	public void doPerformOp(ResultHolder currentResult) {
 		currentResult.setResult( currentResult.getResult() + lastMatch );
 		lastMatch = null;
 	}
